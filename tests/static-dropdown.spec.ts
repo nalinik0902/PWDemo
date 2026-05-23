@@ -1,5 +1,6 @@
 import{test,expect,Locator} from '@playwright/test'
 
+// static dropdown has select tag and option tag in html
 test("Single Select Dropdown Actions",async({page})=>{
   await page.goto("https://testautomationpractice.blogspot.com/");
    await page.locator('#country').selectOption("India");  // by using visible text
