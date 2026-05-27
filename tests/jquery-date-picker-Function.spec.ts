@@ -1,7 +1,7 @@
-import{test,expect,Locator} from '@playwright/test'
+import{test,expect,Locator,Page} from '@playwright/test'
 
 
-async function selectDateFromDatePicker(page: any, targetDate: string, targetMonth: string, targetYear: string, isFuture:boolean) {
+async function selectDateFromDatePicker(page: Page, targetDate: string, targetMonth: string, targetYear: string, isFuture:boolean) {
       while(true){
         const currentMonth= await page.locator(".ui-datepicker-month").innerText();
         const currentYear= await page.locator(".ui-datepicker-year").innerText();
