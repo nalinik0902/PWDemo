@@ -20,5 +20,5 @@ test("download file", async({page})=>{
         fs.unlinkSync(downloadPath); // delete the file after verification
     }
 
-})y6 5
+})
 
